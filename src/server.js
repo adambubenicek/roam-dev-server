@@ -21,7 +21,7 @@ module.exports = function (config) {
                     PAGE_TITLE: `"${config.pageTitle}"`,
                     PAGE_ONLY: config.pageOnly,
                     HOST: `"${config.host}"`,
-                    PORT: config.port,
+                    PORT: `"${config.port}"`,
                 },
                 minify: true,
                 bundle: true,
@@ -76,7 +76,7 @@ module.exports = function (config) {
             CLIENT_PATH: `"${CLIENT_PATH}"`,
             PAGE_TITLE: `"${config.pageTitle}"`,
             HOST: `"${config.host}"`,
-            PORT: `${config.port}`
+            PORT: `"${config.port}"`,
         },
         minify: true,
         bundle: true,
