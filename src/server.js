@@ -16,7 +16,7 @@ module.exports = function (config) {
 
         if (req.url === CLIENT_PATH) {
             const clientScript = esbuild.buildSync({
-                entryPoints: ['./src/client.js'],
+                entryPoints: [path.join(__dirname, 'client.js')],
                 define: { 
                     PAGE_TITLE: `"${config.pageTitle}"`,
                     PAGE_ONLY: config.pageOnly,
@@ -71,7 +71,7 @@ module.exports = function (config) {
         })
 
     const installScript = esbuild.buildSync({
-        entryPoints: ['./src/install.js'],
+        entryPoints: [path.join(__dirname, 'install.js')],
         define: {
             CLIENT_PATH: `"${CLIENT_PATH}"`,
             PAGE_TITLE: `"${config.pageTitle}"`,
