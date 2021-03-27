@@ -1,6 +1,6 @@
 {
   "name": "roam-dev-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Development server that syncs local files into your Roam",
   "main": "./src/server.js",
   "bin": "./bin/roam-dev-server.js",
