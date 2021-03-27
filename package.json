@@ -1,9 +1,9 @@
 {
   "name": "roam-dev-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Development server that syncs local files into your Roam",
   "main": "./src/server.js",
-  "bin": "./src/cli.js",
+  "bin": "./bin/roam-dev-server.js",
   "scripts": {},
   "keywords": ["Roam Research", "Roam"],
   "author": "Adam Bubenicek",
