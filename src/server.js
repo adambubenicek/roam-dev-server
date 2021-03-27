@@ -11,8 +11,6 @@ const CLIENT_PATH = '/client.js'
 module.exports = function (config) {
     config = {...defaults, ...config}
     
-    console.log(config)
-    
     const httpServer = http.createServer((req, res) => {
         res.setHeader("Access-Control-Allow-Origin", "https://roamresearch.com")
 
