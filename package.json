@@ -1,0 +1,19 @@
+{
+  "name": "roam-dev-server",
+  "version": "0.1.0",
+  "description": "Development server that syncs local files into your Roam",
+  "main": "./src/server.js",
+  "bin": "./src/cli.js",
+  "scripts": {},
+  "keywords": ["Roam Research", "Roam"],
+  "author": "Adam Bubenicek",
+  "repository": "github:adambubenicek/roam-dev-server",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.5.1",
+    "esbuild": "^0.9.6",
+    "reconnecting-websocket": "^4.4.0",
+    "ws": "^7.4.4",
+    "yargs": "^16.2.0"
+  }
+}
