@@ -12,7 +12,7 @@ Highly experimental, API might change. Data loss is unlikely, but might still ha
 
 ## Quick start
 
-First, lets create a new directory:
+First, let's create a new directory:
 
 ```console
 $ mkdir roam-files 
