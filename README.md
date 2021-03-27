@@ -4,9 +4,9 @@ Roam Dev Server syncs your local files into your [Roam](http://roamresearch.com/
 
 ## Status
 
-Highly experimental, API might change. Data loss is unlikely, but might still happen due to unforseen circumstances. I recommend backing up first, or developing in a different graph, before copy-pasting final code blocks into your main graph.
+Highly experimental, API might change. Data loss is unlikely, but might still happen due to unforseen circumstances. I recommend backing up first. Or developing in a different graph and copy-pasting final code blocks into your main graph.
 
-## Prerequisities
+## Prerequisites
 
 - [Node.js](https://nodejs.org/en/)
 
@@ -35,9 +35,10 @@ The server generates a small JavaScript snippet, which we copy and paste into Ro
 
 If all went well, we will find our CSS in a new block on a page called `Roam Dev Server`. Let's nest it under a `{{roam/css}}` block now, so we can appreciate its true beauty.
 
-And there we go. We can now go back to our text editor, save our changes, and see them reflected right away.
+And there we go. We can now go back to our text editor, save our changes, and see them reflected right away. 
 
-## Quick start demo
+You can watch the entire process here:
+
 ![Kapture 2021-03-27 at 13 11 46](https://user-images.githubusercontent.com/3390406/112720565-6f4c2d00-8eff-11eb-95c2-cdc824659347.gif)
 
 ## Installation
@@ -45,7 +46,7 @@ And there we go. We can now go back to our text editor, save our changes, and se
 You can either [run it right away with npx](#quick-start), or install it as a regular npm dependency.
 
 ```console
-$ npm add roam-dev-server
+$ npm install --save-dev roam-dev-server
 ```
 
 ## Command line interface
