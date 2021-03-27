@@ -26,11 +26,13 @@ module.exports = function (config) {
                 minify: true,
                 bundle: true,
                 write: false,
-            })
+            }).outputFiles[0].text
+
             res.writeHead(200, {
                 "Content-Type": "text/json"
             })
-            return res.end(clientScript.outputFiles[0].contents)
+
+            return res.end(clientScript)
         }
 
         res.writeHead(404)
