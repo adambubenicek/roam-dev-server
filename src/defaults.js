@@ -34,13 +34,13 @@ module.exports = {
         const content = fs.readFileSync(absolutePath, 'utf-8')
         
         return {
-            // encode, so it plays nicely in the URL, e.g.:
-            // subdir%2Fmyfile.css
+            // UID is the file path. Encoded to play nicely with the URL, e.g.:
+            // subdir/myfile.css > subdir%2Fmyfile.css
             uid: encodeURIComponent(relativePath),
             
-            // wrap content in a code block Roam will understand, e.g.:
+            // Content is wrapped in a code block Roam will understand, e.g.:
             // ```javascript
-            // console.log("I am content of your file")
+            // console.log("I am the content of your file")
             // ```
             string: `\`\`\`${language}\n${content}\`\`\``
         }

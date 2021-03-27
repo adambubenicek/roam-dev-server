@@ -54,13 +54,13 @@ module.exports = function (config) {
                     const block = config.getBlock(relativePath, path.join(resolvedDirectory, relativePath))
                     
                     if (block && block.uid && block.string) {
-                        console.log(`Sending ${relativePath}"`)
+                        console.log(`Syncing ${relativePath}`)
                         ws.send(JSON.stringify({ 
                             blockUid: block.uid, 
                             blockString: block.string 
                         }));
                     } else {
-                        console.log(`Not sending ${relativePath}: getBlock didn't return uid or string"`)
+                        console.log(`Not syncing ${relativePath}: getBlock didn't return uid or string`)
                     }
                 })
 
@@ -84,10 +84,14 @@ module.exports = function (config) {
     }).outputFiles[0].text
 
     httpServer.listen(config.port, config.host, () => {
-        console.log('Server is running. To install the client, run the following javascript in your Roam.')
+        console.log('Server is running. To connect Roam, run the following JavaScript snippet from your Roam\'s Developer Console.')
+        console.log('')
         console.log('-----------------------------------------------')
-        console.log(installScript)
+        console.log('')
+        console.log(installScript.replace(/\n/g, ''))
+        console.log('')
         console.log('-----------------------------------------------')
+        console.log('')
     })
 
     return httpServer
