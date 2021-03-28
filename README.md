@@ -33,9 +33,9 @@ $ npx roam-dev-server
 
 The server generates a small JavaScript snippet, which we copy and paste into Roam's [Developer console](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
 
-If all went well, we will find our CSS in a new block on a page called `Roam Dev Server`. Let's nest it under a `{{roam/css}}` block now, so we can appreciate its true beauty.
+If all went well, we will find our CSS in a new block on a page called `Roam Dev Server`. Let's nest it under a `{{[[roam/css]]}}` block now, so we can appreciate its true beauty.
 
-And there we go. We can now go back to our text editor, save our changes, and see them reflected right away. 
+And there we go. We can now go back to our text editor, save our changes, and see them reloaded back into Roam.
 
 You can watch the entire process here:
 
